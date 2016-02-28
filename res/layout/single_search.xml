@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/back"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/back_arrow_selector"
+            android:contentDescription="@string/app_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/sousuo_Edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/search_edittext_selector"
+            android:drawableLeft="@drawable/zoom"
+            android:drawableStart="@drawable/zoom"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/fast_layout" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+    </ListView>
+
+</LinearLayout>

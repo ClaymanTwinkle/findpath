@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cbcbcb" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/aaa"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="#cbcbcb" />
+
+        <TextView
+            android:id="@+id/listview_item_textview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/aaa"
+            android:layout_toRightOf="@+id/aaa"
+            android:background="@drawable/listview_selector"
+            android:gravity="center"
+            android:text="@string/progress_info"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#cbcbcb" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:background="#cbcbcb" />
+
+</LinearLayout>

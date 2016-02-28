@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.lvetianzhiyi.route"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.lvetianzhiyi.route.view.MyProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android_custom:roundColor="#ADADAD"
+        android_custom:roundProgressColor="#218868"
+        android_custom:roundWidth="10dip"
+        android_custom:textColor="#000000"
+        android_custom:textSize="18sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/progress_info"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/set_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@drawable/my_canvas" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_selector"
+                android:padding="3dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#00ffffff"
+                    android:text="@string/screen_light" />
+
+                <ImageButton
+                    android:id="@+id/alwaysLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/toggle_switch"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@drawable/my_canvas" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_selector" >
+
+                <Button
+                    android:id="@+id/yuyinsetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#00ffffff"
+                    android:text="@string/yuyin_record" />
+
+                <TextView
+                    android:id="@+id/fenge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/yuyinsetting"
+                    android:background="#E0EEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_qiyong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/qiyongyuyin"
+                        android:textColor="#000000" />
+
+                    <CheckBox
+                        android:id="@+id/check_yuyin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginRight="11dp"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_manwoman"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_qiyong"
+                    android:gravity="center" >
+
+                    <RadioButton
+                        android:id="@+id/radio_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="80dp"
+                        android:text="@string/man" />
+
+                    <RadioButton
+                        android:id="@+id/radio_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/woman" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="4dip"
+                android:background="@drawable/my_canvas" />
+
+            <RelativeLayout
+                android:id="@+id/refresh_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_selector"
+                android:padding="1dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#00ffffff"
+                    android:text="@string/refresh_version" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/arrowright"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="4dip"
+                android:background="@drawable/my_canvas" />
+
+            <RelativeLayout
+                android:id="@+id/rl_about_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_selector"
+                android:padding="1dp" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#00ffffff"
+                    android:text="@string/about_us" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/arrowright"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/search_ok_button"
+            android:text="@string/exit"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

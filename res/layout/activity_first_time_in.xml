@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lvetianzhiyi.route"
+    android:id="@+id/framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <com.lvetianzhiyi.route.welcome.ViewFlow
+        android:id="@+id/viewflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.lvetianzhiyi.route.welcome.ViewFlow>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00252525"
+        android:gravity="center"
+        android:padding="3dip" >
+
+        <com.lvetianzhiyi.route.welcome.CircleFlowIndicator
+            android:id="@+id/viewflowindic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="2dip"
+            app:activeColor="#ffffff"
+            app:activeType="fill"
+            app:circleSeparation="20dip"
+            app:inactiveColor="#77ffffff"
+            app:inactiveType="fill"
+            app:radius="4dip" />
+    </LinearLayout>
+
+</FrameLayout>

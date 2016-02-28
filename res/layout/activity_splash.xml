@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".ui.SplashActivity" >
+
+    <ImageView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:scaleType="centerCrop"
+        android:textColor="#33b5e5"
+        android:background="@drawable/index_logo"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

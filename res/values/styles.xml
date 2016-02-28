@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <!-- popupwindow动画 -->
+    <style name="cricleBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_left_to_right</item>
+        <item name="android:windowExitAnimation">@anim/popup_right_to_left</item>
+    </style>
+
+    <style name="NoTitleBackground" parent="android:Theme.Light.NoTitleBar.Fullscreen"></style>
+
+</resources>

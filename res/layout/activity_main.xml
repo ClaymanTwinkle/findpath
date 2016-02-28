@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_interface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE" >
+
+    <com.lvetianzhiyi.route.view.LveTianMapView
+        android:id="@+id/LveTianMap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix" />
+
+    <com.lvetianzhiyi.route.view.SurfaceViewDraw
+        android:id="@+id/SurfaveView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix" />
+
+    <com.lvetianzhiyi.route.view.IndicateArrow
+        android:id="@+id/IndicateArrow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="matrix" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/Main_Edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/search_edittext_selector"
+            android:drawableLeft="@drawable/zoom"
+            android:drawableStart="@drawable/zoom"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+        <com.lvetianzhiyi.route.view.MyMarqueeTextView
+            android:id="@+id/marquee_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Main_Edittext"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="22dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingStart="22dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/hello_world"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_linearlayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+                <ImageButton
+                    android:id="@+id/imagebutton_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_button_view"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+                <ImageButton
+                    android:id="@+id/imagebutton_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/minus_button_view"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zhinanzhen_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_linearlayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
+                <ImageButton
+                    android:id="@+id/zhinanzhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zhinanzhen_button_view"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_select_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_linearlayout"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/zhinanzhen_linear"
+            android:layout_toRightOf="@+id/zhinanzhen_linear"
+            android:background="@drawable/popupbutton_1_selector"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:id="@+id/button_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="4" >
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/button_GlobalPreview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/main_button_selector"
+                    android:drawableLeft="@drawable/global"
+                    android:drawableStart="@drawable/global"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/button_left"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/button_Luxian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/main_button_selector"
+                    android:contentDescription="@string/app_name"
+                    android:drawableLeft="@drawable/global_preview"
+                    android:drawableStart="@drawable/global_preview"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:text="@string/button_center2"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/button_GoHere"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/main_button_selector"
+                    android:contentDescription="@string/app_name"
+                    android:drawableLeft="@drawable/go_here"
+                    android:drawableStart="@drawable/go_here"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="2dp"
+                    android:singleLine="true"
+                    android:text="@string/button_center"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+
+                <Button
+                    android:id="@+id/Setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/main_button_selector"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:drawableStart="@drawable/icon_setting"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:text="@string/button_right"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

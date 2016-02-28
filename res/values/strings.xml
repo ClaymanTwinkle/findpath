@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App名称及设置 -->
+    <string name="app_name">掠天之翼</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 地点搜索框 -->
+    <string name="search_hint">&#160;&#160;输入目的地点,如S3</string>
+    <!-- 搜索界面的确认按钮 -->
+    <string name="search_ok_button">开始导航</string>
+    <!-- 标题栏返回键 -->
+    <string name="title_back_button">主菜单</string>
+    <!-- 退出键 -->
+    <string name="exit">退出</string>
+    <!-- 当前版本 -->
+    <string name="now_version">Android&#160;&#160;版本-v1.0</string>
+    <!-- 欢迎使用提示语 -->
+    <string name="hello_world">欢迎使用掠天之翼App,我们将竭诚为您服务</string>
+    <!-- 版权所有 -->
+    <string name="banquan">掠天之翼&#160;&#160;版权所有\nCopyRight&#160;&#160;2015&#160;&#160;XinYi&#160;&#038;&#160;QiDian&#160;&#160;Reserved</string>
+    <!-- 标签 -->
+    <string name="biaoti">标题</string>
+    <!-- 屏幕常亮 -->
+    <string name="screen_light">屏幕常亮</string>
+    <!-- 语音设置 -->
+    <string name="yuyin_record">语音设置</string>
+    <!-- 启用语音 -->
+    <string name="qiyongyuyin">启用语音</string>
+    <!-- 智能排序 -->
+    <string name="smart_order">智能排序</string>
+    <!-- 男声 -->
+    <string name="man">男</string>
+    <!-- 女声 -->
+    <string name="woman">女</string>
+    <!-- 版本更新 -->
+    <string name="refresh_version">版本更新</string>
+    <!-- 关于我们 -->
+    <string name="about_us">关于我们</string>
+    <!-- 多地点规划 -->
+    <string name="multi_point">多点寻径</string>
+    <!-- 主界面下方按钮 -->
+    <string name="button_right">设置</string>
+    <string name="button_left">全局</string>
+    <string name="button_center">到这去</string>
+    <string name="button_center2">路线</string>
+    <!-- 弹出菜单的楼层选择按钮 -->
+    <string name="parking">B1</string>
+    <string name="first_floor">F1</string>
+    <string name="second_floor">F2</string>
+    <!-- 进度条提示信息 -->
+    <string name="progress_info">加载中,请稍候…</string>
+
+    <!-- 常去地点 -->
+    <string name="fast1">B1层 ES1</string>
+    <string name="fast2">B1层 EL1</string>
+    <string name="fast3">F1层 ES1</string>
+    <string name="fast4">F1层 EL1</string>
+    <string name="fast5">F2层 ES1</string>
+    <string name="fast6">F2层 EL1</string>
+    <string name="fast7">F1层 E15</string>
+    <string name="fast8">F2层 SC2</string>
+
+</resources>

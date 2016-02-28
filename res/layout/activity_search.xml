@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/search_relativelayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Edittext1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/search_edittext_selector"
+                    android:drawableLeft="@drawable/zoom"
+                    android:drawableStart="@drawable/zoom"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jia1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/search_Edittext1"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jiadidian_button"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_relativelayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Edittext2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/search_edittext_selector"
+                    android:drawableLeft="@drawable/zoom"
+                    android:drawableStart="@drawable/zoom"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jia2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/search_Edittext2"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jiadidian_button"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_Edittext2"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/search_rl1_jia2"
+                    android:layout_toStartOf="@+id/search_rl1_jia2"
+                    android:background="@drawable/jiandidian_button"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_relativelayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Edittext3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/search_edittext_selector"
+                    android:drawableLeft="@drawable/zoom"
+                    android:drawableStart="@drawable/zoom"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jia3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/search_Edittext3"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jiadidian_button"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jian3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_Edittext3"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/search_rl1_jia3"
+                    android:layout_toStartOf="@+id/search_rl1_jia3"
+                    android:background="@drawable/jiandidian_button"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_relativelayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Edittext4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/search_edittext_selector"
+                    android:drawableLeft="@drawable/zoom"
+                    android:drawableStart="@drawable/zoom"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jia4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/search_Edittext4"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jiadidian_button"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jian4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_Edittext4"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/search_rl1_jia4"
+                    android:layout_toStartOf="@+id/search_rl1_jia4"
+                    android:background="@drawable/jiandidian_button"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_relativelayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_Edittext5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/search_edittext_selector"
+                    android:drawableLeft="@drawable/zoom"
+                    android:drawableStart="@drawable/zoom"
+                    android:hint="@string/search_hint"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="20sp" >
+                </AutoCompleteTextView>
+
+                <ImageButton
+                    android:id="@+id/search_rl1_jian5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/search_Edittext5"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jiandidian_button"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <include layout="@layout/fast_layout" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/smart_order"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/check_smartOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/search_ok_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_ok_button"
+                android:text="@string/search_ok_button"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
